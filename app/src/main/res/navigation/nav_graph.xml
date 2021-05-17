@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_grap"
+    app:startDestination="@id/matchFragment">
+
+    <fragment
+        android:id="@+id/matchFragment"
+        android:name="com.example.superdemo.MatchFragment"
+        android:label="fragment_match"
+        tools:layout="@layout/fragment_match" >
+        <action
+            android:id="@+id/action_matchFragment_to_register_nav"
+            app:destination="@id/register_nav"
+            app:popUpTo="@id/matchFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_matchFragment_to_inGameFragment"
+            app:destination="@id/inGameFragment" />
+    </fragment>
+    <navigation android:id="@+id/register_nav"
+        app:startDestination="@id/AFragment">
+        <fragment
+            android:id="@+id/AFragment"
+            android:name="com.example.superdemo.SplashScreen"
+            android:label="fragment_a"
+            tools:layout="@layout/fragment_a">
+            <action
+                android:id="@+id/action_AFragment_to_BFragment"
+                app:destination="@id/BFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/BFragment"
+            android:name="com.example.superdemo.RegisterFragment"
+            android:label="fragment_b"
+            tools:layout="@layout/fragment_b" />
+        <action
+            android:id="@+id/action_global_matchFragment"
+            app:destination="@id/matchFragment"
+            app:popUpTo="@id/register_nav"
+            app:popUpToInclusive="true" />
+    </navigation>
+    <fragment
+        android:id="@+id/inGameFragment"
+        android:name="com.example.superdemo.InGameFragment"
+        android:label="fragment_in_game"
+        tools:layout="@layout/fragment_in_game" >
+        <action
+            android:id="@+id/action_inGameFragment_to_gameOverFragment"
+            app:destination="@id/gameOverFragment" />
+        <action
+            android:id="@+id/action_inGameFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameOverFragment"
+        android:name="com.example.superdemo.GameOverFragment"
+        android:label="fragment_game_over"
+        tools:layout="@layout/fragment_game_over" >
+        <action
+            android:id="@+id/action_gameOverFragment_to_matchFragment"
+            app:destination="@id/matchFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.example.superdemo.ResultFragment"
+        android:label="fragment_result"
+        tools:layout="@layout/fragment_result" >
+        <action
+            android:id="@+id/action_resultFragment_to_matchFragment"
+            app:destination="@id/matchFragment" />
+    </fragment>
+</navigation>
