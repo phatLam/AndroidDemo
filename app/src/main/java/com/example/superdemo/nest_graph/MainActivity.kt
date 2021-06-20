@@ -1,10 +1,10 @@
-package com.example.superdemo
+package com.example.superdemo.nest_graph
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
-import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
+import com.example.superdemo.R
 import com.example.superdemo.base.ShareReference
 import com.example.superdemo.databinding.ActivityMainBinding
 

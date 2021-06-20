@@ -1,13 +1,11 @@
-package com.example.superdemo
+package com.example.superdemo.nest_graph
 
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.NavController
-import androidx.navigation.findNavController
+import com.example.superdemo.R
 import com.example.superdemo.base.BaseFragment
 import com.example.superdemo.base.SingleClickListener
 import com.example.superdemo.databinding.FragmentABinding

@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/matchFragment"
-        android:name="com.example.superdemo.MatchFragment"
+        android:name="com.example.superdemo.nest_graph.MatchFragment"
         android:label="fragment_match"
         tools:layout="@layout/fragment_match" >
         <action
@@ -23,7 +23,7 @@
         app:startDestination="@id/AFragment">
         <fragment
             android:id="@+id/AFragment"
-            android:name="com.example.superdemo.SplashScreen"
+            android:name="com.example.superdemo.nest_graph.SplashScreen"
             android:label="fragment_a"
             tools:layout="@layout/fragment_a">
             <action
@@ -32,7 +32,7 @@
         </fragment>
         <fragment
             android:id="@+id/BFragment"
-            android:name="com.example.superdemo.RegisterFragment"
+            android:name="com.example.superdemo.nest_graph.RegisterFragment"
             android:label="fragment_b"
             tools:layout="@layout/fragment_b" />
         <action
@@ -43,7 +43,7 @@
     </navigation>
     <fragment
         android:id="@+id/inGameFragment"
-        android:name="com.example.superdemo.InGameFragment"
+        android:name="com.example.superdemo.nest_graph.InGameFragment"
         android:label="fragment_in_game"
         tools:layout="@layout/fragment_in_game" >
         <action
@@ -55,7 +55,7 @@
     </fragment>
     <fragment
         android:id="@+id/gameOverFragment"
-        android:name="com.example.superdemo.GameOverFragment"
+        android:name="com.example.superdemo.nest_graph.GameOverFragment"
         android:label="fragment_game_over"
         tools:layout="@layout/fragment_game_over" >
         <action
@@ -64,7 +64,7 @@
     </fragment>
     <fragment
         android:id="@+id/resultFragment"
-        android:name="com.example.superdemo.ResultFragment"
+        android:name="com.example.superdemo.nest_graph.ResultFragment"
         android:label="fragment_result"
         tools:layout="@layout/fragment_result" >
         <action
