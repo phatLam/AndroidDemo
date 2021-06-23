@@ -12,7 +12,13 @@
         tools:layout="@layout/fragment_first">
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/ProfileFragment" />
+            app:destination="@id/ProfileFragment" >
+            <argument
+                android:name="userId"
+                app:argType="string"
+                app:nullable="true"
+                />
+        </action>
     </fragment>
     <fragment
         android:id="@+id/ProfileFragment"

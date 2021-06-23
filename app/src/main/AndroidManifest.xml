@@ -9,16 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SuperDemo">
-        <activity
-            android:name=".condition.ConditionActivity"
-            android:label="@string/title_activity_condition"
-            android:theme="@style/Theme.SuperDemo.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+<!--        <activity-->
+<!--            android:name=".condition.ConditionActivity"-->
+<!--            android:label="@string/title_activity_condition"-->
+<!--            android:theme="@style/Theme.SuperDemo.NoActionBar">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
         <activity android:name=".nest_graph.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

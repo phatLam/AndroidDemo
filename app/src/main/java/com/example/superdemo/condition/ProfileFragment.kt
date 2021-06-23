@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.NavOptions
 import androidx.navigation.fragment.findNavController
+import androidx.navigation.fragment.navArgs
 import com.example.superdemo.R
 import com.example.superdemo.databinding.FragmentSecondBinding
 
@@ -22,7 +23,6 @@ class ProfileFragment : Fragment() {
     // This property is only valid between onCreateView and
     // onDestroyView.
     private val binding get() = _binding!!
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val navController = findNavController()
@@ -46,10 +46,10 @@ class ProfileFragment : Fragment() {
         return binding.root
 
     }
-
+    val args: MainFragmentArgs by navArgs()
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
+        val userId = args.userId
         viewModel.isLogin.observe(viewLifecycleOwner){
             if (it){
                 Log.i("PHat", "success")

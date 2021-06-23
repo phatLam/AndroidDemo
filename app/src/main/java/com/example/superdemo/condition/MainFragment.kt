@@ -36,7 +36,8 @@ class MainFragment : Fragment() {
 
 
         binding.buttonFirst.setOnClickListener {
-            findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
+            val action = MainFragmentDirections.actionFirstFragmentToSecondFragment("dfds")
+            findNavController().navigate(action)
         }
     }
 
