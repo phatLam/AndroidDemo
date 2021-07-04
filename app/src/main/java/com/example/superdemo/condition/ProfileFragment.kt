@@ -46,7 +46,7 @@ class ProfileFragment : Fragment() {
         return binding.root
 
     }
-    val args: MainFragmentArgs by navArgs()
+    val args: ProfileFragmentArgs by navArgs()
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val userId = args.userId
@@ -58,7 +58,6 @@ class ProfileFragment : Fragment() {
             }
         }
     }
-
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null

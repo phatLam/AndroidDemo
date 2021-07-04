@@ -45,13 +45,16 @@
         android:id="@+id/inGameFragment"
         android:name="com.example.superdemo.nest_graph.InGameFragment"
         android:label="fragment_in_game"
-        tools:layout="@layout/fragment_in_game" >
+        tools:layout="@layout/fragment_in_game">
         <action
             android:id="@+id/action_inGameFragment_to_gameOverFragment"
             app:destination="@id/gameOverFragment" />
         <action
             android:id="@+id/action_inGameFragment_to_resultFragment"
             app:destination="@id/resultFragment" />
+        <deepLink
+            android:id="@+id/deepLink"
+            app:uri="www.example.com/{myarg}" />
     </fragment>
     <fragment
         android:id="@+id/gameOverFragment"
