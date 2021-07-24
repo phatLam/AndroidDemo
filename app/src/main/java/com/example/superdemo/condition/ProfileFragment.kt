@@ -46,17 +46,18 @@ class ProfileFragment : Fragment() {
         return binding.root
 
     }
+
     val args: ProfileFragmentArgs by navArgs()
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val userId = args.userId
-        viewModel.isLogin.observe(viewLifecycleOwner){
-            if (it){
-                Log.i("PHat", "success")
-            } else {
-                findNavController().navigate(R.id.loginFragment)
-            }
-        }
+//        viewModel.isLogin.observe(viewLifecycleOwner){
+//            if (it){
+//                Log.i("PHat", "success")
+//            } else {
+//                findNavController().navigate(R.id.loginFragment)
+//            }
+//        }
     }
     override fun onDestroyView() {
         super.onDestroyView()
